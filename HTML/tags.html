@@ -1,37 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- Tags são a base do HTML, são elementos que criam
-    toda a estrutura da página. Possuem em sua grande maioria
-    abertura, caracterizada pela estrutura <[nome da tag]> 
-    e de fechamento, caracterizado pela estrutura </[nome da tag]>-->
+        toda a estrutura da página. Possuem em sua grande maioria
+        abertura, caracterizada pela estrutura <[nome da tag]> 
+        e de fechamento, caracterizado pela estrutura </[nome da tag]>-->
+
+    <!-- Aqui você verá as principais Tags do HTML usadas no dia a dia -->
 
     <!-- Tag de Título - Heading -->
     <h1>Título</h1>
+    <!-- Só deve ter uma dessa tag por página criada -->
 
-    <!-- Tags de Sub-Títulos - lista de Prioridade -->
+    <!-- Tags de Sub-Títulos - Numeradas por Ordem de Prioridade dos Sub-Títulos -->
     <h2>Sub-Título 1</h2>
     <h3>Sub-Título 2</h3>
-    <h4>Sub-Título 4</h4>
-    <h5>Sub-Título 5</h5>
-    <h6>Sub-Título 6</h6>
+    <h4>Sub-Título 3</h4>
+    <h5>Sub-Título 4</h5>
+    <h6>Sub-Título 5</h6>
+
+    <!-- Tag de Linha Horizontal - Não Necessita de Fechamento -->
+    <hr>
+
+    <h2>Tags de Texto</h2>
 
     <!-- Tag de Parágrafo -->
     <p>Parágrafo</p>
 
-    <!-- Tag de Parágrafo com tag de Negrito -->
+    <!-- Tag de Parágrafo com tag de Negrito - Texto dentro da tag ficará em negrito -->
     <p><strong>Texto com Negrito</strong></p>
 
-    <!-- Tag de Parágrafo com tag de underline -->
+    <!-- Tag de Parágrafo com tag de underline - Texto dentro da tag ficará com sublinado -->
     <p><u>Texto com Sublinado</u></p>
 
-    <!-- Tag de Linha Horizontal - Não Necessita de Fechamento -->
+    <!-- Tag Span - Faz com que o conteúdo ocupe a mesma linha sempre que possível -->
+    <span>Um parágrafo</span>
+    <br>
+    <span>usando 2 tags span</span>
+
+    <!-- Tag de quebra de linha - Faz com que a linha seja quebrada e o próximo elemento seja
+        mostrado em uma nova linha -->
+    <br>
+
+    <br>
+
+    <span>Parágrafo usando a tag span, porém após quebrar duas linhas</span>
+    <!-- Ao usar a quebra de linha, você define que a linha anterior não poderá ser usada,
+        fazendo com que até os elementos que pudesem ocupar espaços em branco, como o caso do 
+        span, tenham que começar nessa nova linha -->
+
     <hr>
+
+    <h2>Tags de Links</h2>
+
+    <!-- Tag de link -->
+    <a href="https://www.google.com.br">Ir para o google - tag de link</a>
+
+    <!-- Tag de link com target (alvo) = _blank - Envia para uma nova aba em branco ao clicar,
+    extremamente útil no desenvolvimento de sites, pois o usuário não sai do site ao clicar no link -->
+    
+    <br>
+
+    <br>
+
+    <a href="https://www.google.com.br" target="_blank"> Ir para o google - link com Target para uma nova guia</a>
+
+    <!-- Tag de link encapsulando outro elemento,
+    permitindo deixar o elemento clicável - Pode ser usado com imagens, textos, áreas do site -->
+    <a href="https://www.google.com" title="Site do google">
+        <p>ir para o google - link em uma tag de parágrafo</p>
+    </a>
+    <!-- O title dentro de uma tag link é usado para definir um texto que irá aparecer
+        quando o usuário passar o cursor do mouse por cima do link -->
+
+    <!-- Link de estilo ancora - Ao clicar no link manda para uma seção da própria página -->
+    <a href="#lista">Ir para a seção de listas da página - link para uma seção da própria página</a>
+    <!-- É usado o ID do elemento como link - ID é um identificador/nome que você pode dar para um
+        elemento - o ID é representado pelo sinal de # -->
+
+    <hr>
+
+    <h2 id="lista">Tags de Listas</h2>
+    <!-- Foi definido um ID para esse elemento para que ele pudesse ser acessado por uma tag de âncora -->
+
+    <h3>Lista Não Ordenada</h3>
+
+    <!-- Tag de Lista Não Ordenada - Sem Numeração -->
+    <ul>
+        <!-- Tag de itens de uma lista -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h3>Lista Ordenada</h3>
+
+    <!-- Tag de Lista ordenada - Com Numeração -->
+    <ol>
+        <!-- Tag de itens de uma lista - Igual a Não Ordenada -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <hr>
+
+    <h2>Tags de Imagem</h2>
+
+    <p>Imagem 1</p>
+
+    <!-- Tag de Imagem -->
+    <img src="https://www.google.com.br/logos/google.jpg" alt="imagem do google">
+    <!-- Alt = Texto Alternativo, um texto que é mostrado quando o site não consegue carregar a imagem,
+        também é um texto reproduzido sonoramente por programas usados por deficientes visuais.
+        Devemos sempre por um texto nesse campo -->
+
+
+    <br>
+
+    <p>Imagem 2</p>
+    <img src="https://www.google.com.br/logos/google.jpg" alt="imagem do google">
+
+    <br>
+
+    <p>Imagem 3</p>
+    <img src="https://www.google.com.br/logos/google.jpg" alt="imagem do google">
+
+    <br>
+
+    <p>Imagem 4</p>
+    <img src="https://www.google.com.br/logos/google.jpg" alt="imagem do google">
+
+    <br>
+
+    <p>Imagem 5</p>
+    <img src="https://www.google.com.br/logos/google.jpg" alt="imagem do google">
 </body>
 </html>
