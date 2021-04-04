@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
     <!-- Aqui você verá as principais Tags do HTML usadas no dia a dia -->
 
     <!-- Tag de Título - Heading -->
-    <h1>Título</h1>
+    <h1>Seção de Títulos - Título Principal</h1>
     <!-- Só deve ter uma dessa tag por página criada -->
 
     <!-- Tags de Sub-Títulos - Numeradas por Ordem de Prioridade dos Sub-Títulos -->
@@ -30,7 +30,7 @@
     <!-- Tag de Linha Horizontal - Não Necessita de Fechamento -->
     <hr>
 
-    <h2>Tags de Texto</h2>
+    <h2>Seção de Textos</h2>
 
     <!-- Tag de Parágrafo -->
     <p>Parágrafo</p>
@@ -41,9 +41,11 @@
     <!-- Tag de Parágrafo com tag de underline - Texto dentro da tag ficará com sublinado -->
     <p><u>Texto com Sublinado</u></p>
 
-    <!-- Tag Span - Faz com que o conteúdo ocupe a mesma linha sempre que possível -->
+    <!-- Tag Span - Elemento que preenche qualquer espaço em branco de acordo
+        com o tamanho do conteúdo dentro dele - Caso sobre espaço em um elemento
+        anterior, e o conteúdo dentro do span couber, o conteúdo da tag span se 
+        posicionará na mesma linha do elemento anterior -->
     <span>Um parágrafo</span>
-    <br>
     <span>usando 2 tags span</span>
 
     <!-- Tag de quebra de linha - Faz com que a linha seja quebrada e o próximo elemento seja
@@ -59,37 +61,40 @@
 
     <hr>
 
-    <h2>Tags de Links</h2>
+    <h2>Seção de Links</h2>
 
     <!-- Tag de link -->
     <a href="https://www.google.com.br">Ir para o google - tag de link</a>
-
-    <!-- Tag de link com target (alvo) = _blank - Envia para uma nova aba em branco ao clicar,
-    extremamente útil no desenvolvimento de sites, pois o usuário não sai do site ao clicar no link -->
     
     <br>
 
     <br>
 
+    <!-- Tag de link com target (alvo) = _blank - Envia para uma nova aba em branco ao clicar,
+    extremamente útil no desenvolvimento de sites, pois o usuário não sai do site ao clicar no link -->
     <a href="https://www.google.com.br" target="_blank"> Ir para o google - link com Target para uma nova guia</a>
 
     <!-- Tag de link encapsulando outro elemento,
-    permitindo deixar o elemento clicável - Pode ser usado com imagens, textos, áreas do site -->
+        permitindo deixar o elemento clicável como um link - Pode ser usado com 
+        imagens, textos, áreas do site -->
     <a href="https://www.google.com" title="Site do google">
         <p>ir para o google - link em uma tag de parágrafo</p>
     </a>
     <!-- O title dentro de uma tag link é usado para definir um texto que irá aparecer
         quando o usuário passar o cursor do mouse por cima do link -->
 
-    <!-- Link de estilo ancora - Ao clicar no link manda para uma seção da própria página -->
+    <!-- Link de Âncora Interna - Ao clicar no link manda para uma seção da própria página -->
     <a href="#lista">Ir para a seção de listas da página - link para uma seção da própria página</a>
     <!-- É usado o ID do elemento como link - ID é um identificador/nome que você pode dar para um
-        elemento - o ID é representado pelo sinal de # -->
+        elemento - o ID, após definido, é representado pelo sinal de # -->
 
     <hr>
 
-    <h2 id="lista">Tags de Listas</h2>
+    <h2 id="lista">Seção de Listas</h2>
     <!-- Foi definido um ID para esse elemento para que ele pudesse ser acessado por uma tag de âncora -->
+    <!-- ID é usado exclusivamente para dar um nome a um elemento,
+        não se pode repetir o mesmo nome de ID para múltiplos elementos, pois será identificado apenas
+        o primeiro elemento achado com esse nome, sendo ignorado os demais -->
 
     <h3>Lista Não Ordenada</h3>
 
@@ -113,7 +118,7 @@
 
     <hr>
 
-    <h2>Tags de Imagem</h2>
+    <h2>Seção de Imagens</h2>
 
     <p>Imagem 1</p>
 
