@@ -35,11 +35,52 @@
     <!-- Tag de Parágrafo -->
     <p>Parágrafo</p>
 
-    <!-- Tag de Parágrafo com tag de Negrito - Texto dentro da tag ficará em negrito -->
+    <!-- Tag de Parágrafo com Tag de Negrito - Texto dentro da tag Strong ficará em negrito -->
     <p><strong>Texto com Negrito</strong></p>
 
-    <!-- Tag de Parágrafo com tag de underline - Texto dentro da tag ficará com sublinado -->
+    <!-- Tag de Parágrafo com outro tipo de Tag de Negrito - Texto dentro da tag Bold também ficará em negrito -->
+    <p><b>Texto com Negrito 2</b></p>
+
+    <!-- A diferença entre a Tag <B> e a Tag <Strong> é que a Tag Bold não tem semântica de importância,
+        o que faz com que o texto em negrito não se destaque em importância do resto do texto, enquanto
+        a tag Strong tem semâtica, fazendo com que programas de leitura e o próprio navegador identifiquem
+        que essa parte do texto possui uma maior importância que as demais -->
+
+    <!-- Tag de Parágrafo com Tag de Underline - Texto dentro da tag <u> ficará com sublinado -->
     <p><u>Texto com Sublinado</u></p>
+
+    <!-- Tag de Parágrafo com Tag de Itálico - Texto dentro da tag <i> ficará em itálico -->
+    <p><i>Texto com itálico</i></p>
+
+    <!-- Tag de Parágrafo com outro tipo de tag de Itálico - Texto dentro da tag <em> ficará em itálico -->
+    <p><em>Texto com itálico 2</em></p>
+
+    <!-- A diferença entre a Tag <i> e a Tag <em> é que a Tag <i> não tem semântica de importância,
+        o que faz com que o texto em itálico não se destaque em importância do resto do texto, enquanto
+        a tag <em> tem semâtica, fazendo com que programas de leitura e o próprio navegador identifiquem
+        que essa parte do texto possui uma maior importância que as demais -->
+
+    <!-- Tag de Parágrafo com Tag Small - Diminui o texto, deixando-o pequeno - Útil para descrições de imagens -->
+    <p><small>Texto pequeno</small></p>
+
+    <!-- Tag de Parágrafo com Tag de Deletado - Excluí qualquer texto que estiver dentro, deixando ele riscado como
+        um item concluído em uma lista -->
+    <p><del>Texto Deletado</del></p>
+
+    <!-- Tag de Parágrafo com Tag de Marcação - Destaca o texto que estiver dentro da tag Mark como um marca texto -->
+    <p><mark>Texto Destacado</mark></p>
+
+    <!-- Tag de Parágrafo com Tag de Superior - Deixa o texto dentro da tag Sup no superior do texto, como um expoênte,
+        sobscrito -->
+    <p>1<sup>o</sup> lugar</p>
+
+    <!-- Tag de Parágrafo com Tag de Inferior - Deixa o texto dentro da tag Sub no inferior do texto, subscrito -->
+    <p>H<sub>2</sub>O</p>
+
+    <!-- Qualquer uma dessas Tag de manipulação de texto podem ser usadas em qualquer pedaço do texto, necessitando
+        apenas que o texto fique dentro dela -->
+
+    <p>Esse texto possui <b>negrito</b>, <i>itálico</i> e <u>sublinado</u></p>
 
     <!-- Tag Span - Elemento que preenche qualquer espaço em branco de acordo
         com o tamanho do conteúdo dentro dele - Caso sobre espaço em um elemento
@@ -63,7 +104,7 @@
 
     <h2>Seção de Links</h2>
 
-    <!-- Tag de link -->
+    <!-- Tag de link - O endereço ao qual o usuário será enviado ao clicar fica dentro do href="" -->
     <a href="https://www.google.com.br">Ir para o google - tag de link</a>
     
     <br>
@@ -84,7 +125,7 @@
         quando o usuário passar o cursor do mouse por cima do link -->
 
     <!-- Link de Âncora Interna - Ao clicar no link manda para uma seção da própria página -->
-    <a href="#lista">Ir para a seção de listas da página - link para uma seção da própria página</a>
+    <a href="#lista">Ir para a seção de listas da página - Link para uma seção da própria página</a>
     <!-- É usado o ID do elemento como link - ID é um identificador/nome que você pode dar para um
         elemento - o ID, após definido, é representado pelo sinal de # -->
 
@@ -100,7 +141,7 @@
 
     <!-- Tag de Lista Não Ordenada - Sem Numeração -->
     <ul>
-        <!-- Tag de itens de uma lista -->
+        <!-- Tag de itens de uma lista - Que irão compor a lista não ordenada -->
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
@@ -110,7 +151,7 @@
 
     <!-- Tag de Lista ordenada - Com Numeração -->
     <ol>
-        <!-- Tag de itens de uma lista - Igual a Não Ordenada -->
+        <!-- Tag de itens de uma lista - Igual a Não Ordenada - Irá compor a lista ordenada -->
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
@@ -122,13 +163,12 @@
 
     <p>Imagem 1</p>
 
-    <!-- Tag de Imagem -->
+    <!-- Tag de Imagem - O caminho da imagem ficará dentro do src="" -->
     <img src="https://www.google.com.br/logos/google.jpg" alt="imagem do google">
     <!-- Alt = Texto Alternativo, um texto que é mostrado quando o site não consegue carregar a imagem,
         também é um texto reproduzido sonoramente por programas usados por deficientes visuais.
         Devemos sempre por um texto nesse campo -->
-
-
+ 
     <br>
 
     <p>Imagem 2</p>
