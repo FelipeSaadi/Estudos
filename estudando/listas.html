@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Página de listas</h1>
+
+    <h2>Lista do tipo Square</h2>
+    <!-- Lista não ordernada com estilo modificado -->
+    <ul style="list-style-type: square">
+        <li>Café</li>
+        <li>Leita</li>
+        <li>Chá</li>
+    </ul>
+
+    <hr>
+
+    <h2>Lista do tipo Alfabética</h2>
+    <!-- Lista ordenada com o type modificado -->
+    <ol type="A">
+        <li>Café</li>
+        <li>Leite</li>
+        <li>Chá</li>
+    </ol>
+
+    <hr>
+
+    <h2>Lista começando por X valor</h2>
+    <!-- Lista ordenada com o valor inicial
+        modificado, por meio do atributo Start -->
+    <ol start="5">
+        <li>Café</li>
+        <li>Leite</li>
+        <li>Chá</li>
+    </ol>
+
+    <hr>
+
+    <h2>Lista com vários Tipos</h2>
+    <!-- Lista não ordenada com itens de vários tipos -->
+    <ul>
+        <li type="1">Café</li>
+        <li type="i">Leite</li>
+        <li type="a">Chá</li>
+    </ul>
+
+    <hr>
+
+    <h2>Listas dentro de Listas</h2>
+    <!-- Listas dentro de itens de uma lista -
+        é possível por N listas dentro das listas,
+        criando uma árvore de listas -->
+    <ul>
+        <li>
+            Café
+            <ul>
+                <li>Preto</li>
+                <li>Carioca</li>
+                <li>Expresso</li>
+            </ul>
+        </li>
+        <li>
+            Chá
+            <ul>
+                <li>Chá Verde</li>
+                <li>Chá Preto</li>
+                <li>Chá de Camomila</li>
+            </ul>
+        </li>
+        <li>
+            Leite
+            <ul>
+                <li>Achocolatado</li>
+                <li>Nesquik</li>
+                <li>
+                    Chocolate Quente
+                    <ul>
+                        <li>Com Chocolate Granulado</li>
+                        <li>Com Chocolate Derretido</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
