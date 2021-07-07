@@ -4,7 +4,7 @@
 
 ## CSS
 
-## PHP
+## JS
 
 ## REACT
 
