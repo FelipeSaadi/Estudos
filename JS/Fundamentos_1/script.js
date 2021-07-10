@@ -99,3 +99,22 @@ console.log(felipeNew);
 
 console.log(`Just a random text`);
 */
+
+const age = 15;
+
+if (age >= 18) {
+    console.log("Sarah can start driving license 🚗")
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young, wait another ${yearsLeft} years 😄`);
+}
+
+const birthday = 1998;
+let century;
+
+if (birthday <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century)

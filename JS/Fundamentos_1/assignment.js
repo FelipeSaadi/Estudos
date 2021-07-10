@@ -1,11 +1,11 @@
 /*
 let country = "Brasil";
 let continent = "América do Sul";
-let population = 212000000;
+let population = 212;
 
 console.log(country);
 console.log(continent);
-console.log(population / 1000000 + " milhões");
+console.log(population + " milhões");
 
 let isIsland = false;
 let language;
@@ -18,23 +18,29 @@ console.log(typeof language);
 language = "Portuguese";
 
 let halfPopulation = population / 2;
-console.log(halfPopulation / 1000000 + " milhões");
+console.log(halfPopulation + " milhões");
 
 population += 1;
 console.log(population);
 population -= 1;
 
-let finlandPopulation = 6000000;
+let finlandPopulation = 6;
 
 let myCountryHigherPopulation = population > finlandPopulation;
 console.log(myCountryHigherPopulation);
 
-let avaragePopulation = 33000000;
+let avaragePopulation = 33;
 let myCountryLowerAvarage = population < avaragePopulation;
 
 console.log(myCountryLowerAvarage);
 
-let description = `${country} is in ${continent}, and its ${population / 1000000} million people speak portuguese`;
+let description = `${country} is in ${continent}, and its ${population} million people speak portuguese`;
 
 console.log(description);
+
+if (population >= 33) {
+    console.log(`${country}'s population is above average`);
+} else {
+    console.log(`${country}'s population is ${avaragePopulation - population} million below average`);
+}
 */
