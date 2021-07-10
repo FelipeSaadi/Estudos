@@ -83,4 +83,19 @@ console.log(x, y);
 
 const avarageAge = (ageFelipe + ageNick) / 2;
 console.log(ageFelipe, ageNick, avarageAge);
+
+const firstName = "Felipe";
+const job = "programmer";
+const birthday = 1998;
+const year = 2021;
+
+const felipe = "I'm " + firstName + ", a " +
+    (year - birthday) + " years old" + job + "!";
+
+console.log(felipe);
+
+const felipeNew = `I'm ${firstName}, a ${year - birthday} years old ${job}!`;
+console.log(felipeNew);
+
+console.log(`Just a random text`);
 */

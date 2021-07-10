@@ -1,3 +1,4 @@
+/*
 let markMass, markHeight, markBMI, markHigherBMI;
 let johnMass, johnHeight, johnBMI;
 
@@ -28,6 +29,4 @@ console.log(markBMI, johnBMI);
 markHigherBMI = markBMI > johnBMI;
 
 console.log(markHigherBMI);
-
-
-
+*/
