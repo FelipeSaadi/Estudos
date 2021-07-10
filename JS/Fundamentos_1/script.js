@@ -13,9 +13,7 @@ let PI = 3.1415;
 let myFirstJob = "Programmer";
 
 console.log(myFirstJob);
-*/
 
-/*
 let javascriptIsFun = true;
 console.log(typeof true);
 console.log(typeof javascriptIsFun);
@@ -33,4 +31,56 @@ year = 1998;
 console.log(typeof year);
 
 console.log(typeof null);
+
+let age = 22;
+age = 23;
+
+const birthday = 1998;
+
+var job = "Programmer";
+job = "Dev";
+
+lastName = "Saadi";
+console.log(lastName);
+
+let now = 2021;
+const ageFelipe = now - 1998;
+const ageNick = now - 1999;
+
+console.log(ageFelipe, ageNick);
+
+console.log(ageFelipe * 2, ageFelipe / 10, 2 ** 3);
+
+const firstName = "Felipe";
+const lastName = "Saadi";
+
+console.log(firstName + " " + lastName);
+
+let x = 10 + 5;
+x += 10;
+x *= 4;
+x++;
+x--;
+x--;
+console.log(x);
+
+console.log(ageFelipe > ageNick);
+console.log(ageNick >= 18);
+
+const isFullAge = ageNick >= 18;
+
+console.log(now - 1998 >= 22);
+
+let now = 2021;
+const ageFelipe = now - 1998;
+const ageNick = now - 1999;
+
+console.log(ageFelipe > ageNick);
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y);
+
+const avarageAge = (ageFelipe + ageNick) / 2;
+console.log(ageFelipe, ageNick, avarageAge);
 */
