@@ -98,7 +98,6 @@ const felipeNew = `I'm ${firstName}, a ${year - birthday} years old ${job}!`;
 console.log(felipeNew);
 
 console.log(`Just a random text`);
-*/
 
 const age = 15;
 
@@ -117,4 +116,5 @@ if (birthday <= 2000) {
 } else {
     century = 21;
 }
-console.log(century)
+console.log(century);
+*/
