@@ -54,4 +54,7 @@ const numNeighbours = Number(prompt("How many neighbour countries does your coun
 if (numNeighbours === 1) console.log("Only 1 border");
 else if (numNeighbours > 1) console.log("More than 1 border");
 else console.log("No borders"), console.log(typeof numNeighbours);
+
+if (language === "english" && population < 50 && !isIsland) console.log("You should live in Brazil :)");
+else console.log("Brazil does not meet your criteria :(")
 */
