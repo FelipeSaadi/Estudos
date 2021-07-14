@@ -172,4 +172,38 @@ else if (favourite === 9) console.log("9 is also a cool number");
 else console.log("Number is not 23 or 7 or 9");
 
 if (favourite !== 23) console.log("Why not 23?");
+
+const day = "monday";
+
+switch (day) {
+    case "monday":
+        console.log("Plan my course lesson sequence");
+        console.log("Go to coding meetup");
+        break;
+    case "tuesday":
+        console.log("Prepare to study english");
+        break;
+    case "wednesday":
+    case "thursday":
+        console.log("Write code examples");
+        break;
+    case "friday":
+        console.log("Go to classroom");
+        break;
+    case "saturday":
+    case "sunday":
+        console.log("Enjoy the weekend :D");
+        break;
+    default:
+        console.log("Not a valid day!");
+}
+
+if (day === "monday") {
+    console.log("Plan my course lesson sequence"); console.log("Go to coding meetup");
+}
+else if (day === "tuesday") console.log("Prepare to study english");
+else if (day === "wednesday" || day === "thursday") console.log("Write code examples");
+else if (day == "friday") console.log("Go to classroom");
+else if (day === "saturday" || day === "sunday") console.log("Enjoy the weekend :D");
+else console.log("Not a valid day!");
 */
