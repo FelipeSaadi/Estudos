@@ -57,4 +57,27 @@ else console.log("No borders"), console.log(typeof numNeighbours);
 
 if (language === "english" && population < 50 && !isIsland) console.log("You should live in Brazil :)");
 else console.log("Brazil does not meet your criteria :(")
+
+const language = "mandarin";
+
+switch (language) {
+    case "chinese":
+    case "mandarin":
+        console.log("MOST number of native speakers!");
+        break;
+    case "spanish":
+        console.log("2nd place in number of native speakers");
+        break;
+    case "english":
+        console.log("3rd place");
+        break;
+    case "hindi":
+        console.log("Number 4");
+        break;
+    case "arabic":
+        console.log("5th most spoken language");
+        break;
+    default:
+        console.log("Great language too :D");
+}
 */
