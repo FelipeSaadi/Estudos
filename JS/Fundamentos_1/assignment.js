@@ -80,4 +80,9 @@ switch (language) {
     default:
         console.log("Great language too :D");
 }
+
+const country = "Brasil";
+const population = 212;
+
+console.log(`${country}'s population is ${population > 33 ? "above" : "below"} average`);
 */
