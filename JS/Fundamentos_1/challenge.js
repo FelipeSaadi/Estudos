@@ -71,4 +71,12 @@ function compete(dolphinsPts, koalasPts) {
     dolphins += dolphinsPts;
     koalas += koalasPts;
 }
+// Challenge 4
+
+let billValue, tip;
+
+bill = 275;
+tip = bill >= 50 && bill <= 300 ? bill * 15 / 100 : bill * 20 / 100;
+
+console.log(`The bill was ${bill}, the tip was ${tip} and the total value is ${bill + tip}`);
 */
