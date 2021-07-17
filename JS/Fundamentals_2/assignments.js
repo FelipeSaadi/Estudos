@@ -48,4 +48,22 @@ console.log(`${countryName} has ${countryPopulation} million people, it's about 
 
 const usaWorldPercent2 = percentageOfWorld2("USA", 326);
 console.log(`${countryName} has ${countryPopulation} million people, it's about ${usaWorldPercent2}% of the world population`);
+
+const worldPopulation = 7900;
+let countryName, countryPopulation;
+
+const percentageOfWorld3 = (country, population) => {
+    countryName = country;
+    countryPopulation = population;
+    return (population / worldPopulation * 100).toFixed(1);
+}
+
+const chinaWorldPercent3 = percentageOfWorld3("China", 1441);
+console.log(`${countryName} has ${countryPopulation} million people, it's about ${chinaWorldPercent3}% of the world population`);
+
+const brazilWorldPercent3 = percentageOfWorld3("Brazil", 212);
+console.log(`${countryName} has ${countryPopulation} million people, it's about ${brazilWorldPercent3}% of the world population`);
+
+const usaWorldPercent3 = percentageOfWorld3("USA", 326);
+console.log(`${countryName} has ${countryPopulation} million people, it's about ${usaWorldPercent3}% of the world population`);
 */
