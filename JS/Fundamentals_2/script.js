@@ -32,4 +32,16 @@ const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
 const num = Number("22");
+
+function calcAge1(year, birthYear) {
+    return year - birthYear;
+}
+const age1 = calcAge1(2021, 1998);
+console.log(age1);
+
+const calcAge2 = function (year, birthYear) {
+    return year - birthYear;
+}
+const age2 = calcAge2(2021, 1998);
+console.log(age2);
 */
