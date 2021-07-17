@@ -66,4 +66,18 @@ console.log(`${countryName} has ${countryPopulation} million people, it's about 
 
 const usaWorldPercent3 = percentageOfWorld3("USA", 326);
 console.log(`${countryName} has ${countryPopulation} million people, it's about ${usaWorldPercent3}% of the world population`);
+
+// Function calling other
+const worldPopulation = 7900;
+
+function percentOfWorld(population) {
+    return (population / worldPopulation * 100).toFixed(1);
+}
+function describePopulation(country, population) {
+    const countryWorldPopulation = percentOfWorld(population);
+    console.log(`${country} has ${population} million people, it's which is about ${countryWorldPopulation}% of the world.`);
+}
+describePopulation("Brazil", 212);
+describePopulation("USA", 326);
+describePopulation("China", 1441);
 */
