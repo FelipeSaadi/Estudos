@@ -80,4 +80,26 @@ function describePopulation(country, population) {
 describePopulation("Brazil", 212);
 describePopulation("USA", 326);
 describePopulation("China", 1441);
+
+// Arrays Introduction assignment
+const countries = ["Brazil", "USA", "Japan", "Germany"];
+const populations = [212, 326, 123, 83];
+
+console.log(populations.length === 4);
+
+const worldPopulation = 7900;
+
+const percentageOfWorld = function (population) {
+    return (population / worldPopulation * 100).toFixed(1);
+}
+
+const percentages = [
+    percentageOfWorld(populations[0]),
+    percentageOfWorld(populations[1]),
+    percentageOfWorld(populations[2]),
+    percentageOfWorld(populations[3])
+]
+
+console.log(countries);
+console.log(percentages);
 */
