@@ -102,4 +102,22 @@ const percentages = [
 
 console.log(countries);
 console.log(percentages);
+
+// Basic Array Operations
+const neighbours = ["Venezuela", "Guiana", "Suriname", "Guiana Francesa", "Uruguai", "Argentina", "Paraguai", "Bolivia", "Colômbia"];
+
+neighbours.push("Utopia");
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes("Germany")) {
+    console.log("Probably not a central European country :D");
+}
+
+if (neighbours.includes("Bolivia")) {
+    neighbours[neighbours.indexOf("Bolivia")] = "Equador";
+}
+console.log(neighbours);
 */
