@@ -24,4 +24,27 @@ avgDolphins = calcAvarage(85, 54, 41);
 avgKoalas = calcAvarage(23, 34, 27);
 
 checkWinner(avgDolphins, avgKoalas);
+
+// Challenge 2
+const bills = [125, 555, 44];
+const tips = [], total = [];
+
+const calcTip = function (bill) {
+    if (bill >= 50 && bill <= 300) {
+        let tip = bill * 15 / 100;
+        total.push(bill + tip);
+        return tips.push(tip);
+    } else {
+        let tip = bill * 20 / 100;
+        total.push(bill + tip);
+        return tips.push(tip);
+    }
+}
+
+calcTip(bills[0]);
+calcTip(bills[1]);
+calcTip(bills[2]);
+
+console.log(tips);
+console.log(total);
 */
