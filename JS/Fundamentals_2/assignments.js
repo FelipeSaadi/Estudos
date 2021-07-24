@@ -127,16 +127,27 @@ const myCountry = {
     capital: "Brasilia",
     language: "Portuguese",
     population: "212",
-    neighbours: ["Venezuela", "Guiana", "Suriname", "Guiana Francesa", "Uruguai", "Argentina", "Paraguai", "Bolivia", "Colômbia"]
+    neighbours: [],
+    describe: function () {
+        console.log(`${this.name} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
+    },
+    checkIsland: function () {
+        this.isIsland = this.neighbours ? false : true;
+        return console.log(this.isIsland);
+    }
 };
 console.log(myCountry);
 
 // Dot vs Bracket Notation
-console.log(`${myCountry.name} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
+console.log(`${myCountry.name} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
 
 myCountry.population += 2;
 console.log(myCountry.population);
 
 myCountry["population"] -= 2;
 console.log(myCountry["population"]);
+
+// Object Methods
+myCountry.describe();
+myCountry.checkIsland();
 */
