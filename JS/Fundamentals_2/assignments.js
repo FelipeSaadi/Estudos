@@ -120,4 +120,14 @@ if (neighbours.includes("Bolivia")) {
     neighbours[neighbours.indexOf("Bolivia")] = "Equador";
 }
 console.log(neighbours);
+
+// Introduction to Objects
+const myCountry = {
+    country: "Brazil",
+    capital: "Brasilia",
+    language: "Portuguese",
+    population: "212",
+    neighbours: ["Venezuela", "Guiana", "Suriname", "Guiana Francesa", "Uruguai", "Argentina", "Paraguai", "Bolivia", "Colômbia"]
+};
+console.log(myCountry);
 */
