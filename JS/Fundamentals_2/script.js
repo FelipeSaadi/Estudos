@@ -199,4 +199,40 @@ console.log(felipe);
 
 // Challenge
 console.log(`${felipe.firstName} has ${felipe.friends.length} friends, and his best friend is called ${felipe.friends[felipe.friends.indexOf("Michael")]}`);
+
+// Object Methods
+const felipe = {
+    firstName: "Felipe",
+    lastName: "Saadi",
+    birthYear: 1998,
+    job: "Programmer",
+    friends: ["Michael", "Peter", "Steven"],
+    hasDriversLicense: false,
+
+    //calcAge: function (birthYear) {
+    //    return 2037 - birthYear;
+    //}
+
+    //calcAge: function () {
+    //    return 2037 - this.birthYear;
+    //}
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.age ? this.age : this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`
+    }
+};
+
+console.log(felipe.calcAge());
+
+console.log(felipe.calcAge());
+console.log(felipe.calcAge());
+console.log(felipe.calcAge());
+
+// Challenge
+console.log(felipe.getSummary());
 */
