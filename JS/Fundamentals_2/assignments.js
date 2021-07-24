@@ -123,11 +123,20 @@ console.log(neighbours);
 
 // Introduction to Objects
 const myCountry = {
-    country: "Brazil",
+    name: "Brazil",
     capital: "Brasilia",
     language: "Portuguese",
     population: "212",
     neighbours: ["Venezuela", "Guiana", "Suriname", "Guiana Francesa", "Uruguai", "Argentina", "Paraguai", "Bolivia", "Colômbia"]
 };
 console.log(myCountry);
+
+// Dot vs Bracket Notation
+console.log(`${myCountry.name} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
+
+myCountry.population += 2;
+console.log(myCountry.population);
+
+myCountry["population"] -= 2;
+console.log(myCountry["population"]);
 */
