@@ -176,4 +176,27 @@ const felipe = {
     job: "Programmer",
     friends: ["Michael", "Peter", "Steven"]
 };
+console.log(felipe);
+
+console.log(felipe.firstName);
+console.log(felipe["lastName"]);
+
+const nameKey = "Name";
+console.log(felipe["first" + nameKey]);
+console.log(felipe["last" + nameKey]);
+
+const interestIn = prompt(`What do you want to know about ${felipe.firstName}? Choose between firstName, lastName, age, job, and friends`);
+
+if (felipe[interestIn]) {
+    console.log(felipe[interestIn])
+} else {
+    console.log("Wrong request! Choose between firstName, lastName, age, job, and friends");
+}
+
+felipe.location = "Brazil";
+felipe["instagram"] = "@FelipeSaadi";
+console.log(felipe);
+
+// Challenge
+console.log(`${felipe.firstName} has ${felipe.friends.length} friends, and his best friend is called ${felipe.friends[felipe.friends.indexOf("Michael")]}`);
 */
