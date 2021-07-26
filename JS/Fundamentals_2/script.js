@@ -235,4 +235,9 @@ console.log(felipe.calcAge());
 
 // Challenge
 console.log(felipe.getSummary());
+
+// Iteration with For Loop
+for (let rep = 1; rep <= 30; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`);
+}
 */
