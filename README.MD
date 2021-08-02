@@ -6,6 +6,8 @@
 
 ## JS
 
+## TypeScript
+
 ## REACT
 
 ## REACT NATIVE
