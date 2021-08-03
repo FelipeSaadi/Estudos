@@ -6,6 +6,10 @@
 
 ## JS
 
+## TypeScript
+
 ## REACT
+
+## Next.js
 
 ## REACT NATIVE
