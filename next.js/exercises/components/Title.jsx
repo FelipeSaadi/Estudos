@@ -1,8 +1,13 @@
-export default function Title() {
-    return (
+export default function Title(props) {
+    return props.isParagraph ? (
         <>
-            <h1>Title</h1>
-            <h2>Subtitle</h2>
+            <p>{props.title}</p>
+            <p>{props.desc}</p>
+        </>
+    ) : (
+        <>
+            <h1>{props.title}</h1>
+            <h2>{props.desc}</h2>
         </>
     )
 }
