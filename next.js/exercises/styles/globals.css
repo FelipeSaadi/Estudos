@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.blue {
+  background-color: cornflowerblue;
+}
+.red {
+  background-color: crimson;
+}
