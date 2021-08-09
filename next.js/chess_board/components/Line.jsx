@@ -4,18 +4,7 @@ import Subdivision from "./Subdivision";
 export default function Line(props) {
     return (
         <div className={styles.line}>
-            {props.line % 2 === 0 ? (
-                <>
-                    <Subdivision />
-                    <Subdivision black />
-                    <Subdivision />
-                    <Subdivision black />
-                    <Subdivision />
-                    <Subdivision black />
-                    <Subdivision />
-                    <Subdivision black />
-                </>
-            ) : (
+            {props.inverse ? (
                 <>
                     <Subdivision black />
                     <Subdivision />
@@ -25,6 +14,16 @@ export default function Line(props) {
                     <Subdivision />
                     <Subdivision black />
                     <Subdivision />
+                </>) : (
+                <>
+                    <Subdivision />
+                    <Subdivision black />
+                    <Subdivision />
+                    <Subdivision black />
+                    <Subdivision />
+                    <Subdivision black />
+                    <Subdivision />
+                    <Subdivision black />
                 </>
             )}
         </div >
