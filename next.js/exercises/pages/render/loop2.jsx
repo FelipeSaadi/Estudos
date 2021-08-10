@@ -1,4 +1,4 @@
-import listProducts from "../../.next/data/listProducts"
+import listProducts from "../../data/listProducts"
 
 export default function loop2() {
     const border = {
@@ -15,7 +15,6 @@ export default function loop2() {
             )
         })
     }
-
     return (
         <div>
             <table>
