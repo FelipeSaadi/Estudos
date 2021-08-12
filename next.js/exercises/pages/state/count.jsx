@@ -1,4 +1,5 @@
 import { useState } from "react"
+import CountDisplay from "../../components/CountDisplay"
 
 export default function count() {
     const style = {
@@ -25,7 +26,7 @@ export default function count() {
     return (
         <div style={style}>
             <h1>Count</h1>
-            <div>Value: {value}</div>
+            <CountDisplay value={value} />
             <div>
                 <button onClick={add} style={buttonStyle}>+</button>
                 <button onClick={decrease} style={buttonStyle}>-</button>
