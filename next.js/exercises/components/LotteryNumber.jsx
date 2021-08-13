@@ -9,8 +9,8 @@ export default function LotteryNumber(props) {
             borderRadius: "20px",
             backgroundColor: "#222",
             color: "#fff",
-            fontSize: "14px",
-            margin: "2px"
+            fontSize: "20px",
+            margin: "1px",
         }}>
             {props.number}
         </div>

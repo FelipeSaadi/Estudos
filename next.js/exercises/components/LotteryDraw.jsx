@@ -3,8 +3,8 @@ import LotteryNumber from "./LotteryNumber"
 export default function LotteryDraw(props) {
     function generateDraw(draws) {
         const lotteryNumbers = []
-        for (let i = 0; i <= draws; i++) {
-            lotteryNumbers.push(<LotteryNumber number={Math.floor(Math.random(1) * 61)} />)
+        for (let i = 0; i < draws; i++) {
+            lotteryNumbers.push(<LotteryNumber key={i} number={Math.floor(Math.random(1) * 61)} />)
         }
         return lotteryNumbers
     }
@@ -12,10 +12,11 @@ export default function LotteryDraw(props) {
         <div style={{
             display: "flex",
             flexWrap: "wrap",
+            maxWidth: "50vw",
             justifyContent: "left",
             alignItems: "center"
         }}>
             {generateDraw(props.value)}
-        </div>
+        </div >
     )
 }
