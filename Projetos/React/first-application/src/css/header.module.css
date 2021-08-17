@@ -1,0 +1,18 @@
+#header {
+    background: rgb(17, 1, 90);
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+
+}
+.logo {
+    display: flex;
+    margin-left: 0;
+    color: #ddd;
+}
+.addNewButton {
+    display: flex;
+    color: #ddd;
+    background-color: rgb(19, 9, 63);
+}
