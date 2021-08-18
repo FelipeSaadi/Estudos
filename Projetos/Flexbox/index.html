@@ -9,37 +9,17 @@
 
     <style>
         .container {
+            height: 500px;
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
             background-color: #DDDDDD;
         }
 
-        .div1 {
-            flex: 1;
-            background-color: #ff0000;
-            margin: 10px;
-            padding: 10px;
-            font-size: 18px;
-        }
-
-        .div2 {
-            flex: 1;
-            background-color: #ff0000;
-            margin: 10px;
-            padding: 10px;
-            font-size: 18px;
-        }
-
-        .div3 {
-            flex: 1;
-            background-color: #ff0000;
-            margin: 10px;
-            padding: 10px;
-            font-size: 18px;
-        }
-
-        .div4 {
-            flex: 3;
+        .container div {
+            width: 150px;
+            height: 150px;
             background-color: #ff0000;
             margin: 10px;
             padding: 10px;
@@ -50,10 +30,9 @@
 
 <body>
     <div class="container">
-        <div class="div1">1</div>
-        <div class="div2">2</div>
-        <div class="div3">3</div>
-        <div class="div4">4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
     </div>
 </body>
 
