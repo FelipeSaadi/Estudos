@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    max-width: 100px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
