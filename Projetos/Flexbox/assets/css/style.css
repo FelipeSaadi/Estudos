@@ -288,6 +288,65 @@ footer {
 .footer_areaItem {
     flex: 1;
 }
+.footer_areaItem a {
+    text-decoration: none;
+}
+
+.footer_desc {
+    margin-bottom: 30px;
+}
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_info_title {
+    flex: 100%;
+}
+.footer_info_text, .footer_info_contact {
+    flex:1;
+    padding-top: 5px;
+    word-break: break-all;
+}
+.footer_info_contact {
+    text-align: center;
+}
+
+.latest_posts {
+    display: flex;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+.latest_posts_icon {
+    margin-right: 5px;
+    line-height: 20px;
+}
+.latest_posts_text {
+    word-break: break-all;
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+.latest_posts_postedAt {
+    color: #808080
+}
+
+.latest_tweets {
+    display: flex;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+.latest_tweets_icon {
+    margin-right: 5px;
+    line-height: 20px;
+}
+.latest_tweets_text {
+    word-break: break-all;
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+.latest_tweets_postedAt {
+    color: #808080
+}
+
 
 .footer_copy {
     border-top: 1px solid #aaaa;
