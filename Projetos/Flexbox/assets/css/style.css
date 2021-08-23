@@ -12,11 +12,12 @@ body {
     justify-content: space-between;
     width: 80%;
 }
-
 header {
     display: flex;
     justify-content: center;
     height: 100px;
+    background-color: black;
+    color: #ddd;
 }
 .logo {
     display: flex;
@@ -43,19 +44,21 @@ nav a {
     text-decoration: none;
     color: #aaaaaa;
 }
-nav .active a, nav a:hover {
+nav .active, nav a:hover {
     background-color: #626262;
     color: #eeee;
 }
 .menuMobile {
     display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .menuMobile:hover {
     cursor: pointer;
 }
 .mm_line {
     background-color: #dddd;
-    height: 2px;
+    height: 3px;
     width: 35px;
     margin: 5px;
     margin-top: 10px;
@@ -413,6 +416,10 @@ footer {
     nav ul {
         display: none;
         flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: black;
     }
     .footer_menu {
         flex-direction: column;

@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body id="home">
     <header>
         <div class="container">
             <div class="logo">
-                <a href="/">
+                <a href="#home">
                     <img src="assets/images/logo.jpg">
                 </a>
             </div>
@@ -25,17 +25,17 @@
                         <div class="mm_line"></div>
                     </div>
                     <ul>
-                        <li class="active">
-                            <a href="/">Home</a>
+                        <li>
+                            <a class="active" onclick="active(event)" href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="/">Home</a>
+                            <a onclick="active(event)" href="#news">News</a>
                         </li>
                         <li>
-                            <a href="/">Home</a>
+                            <a onclick="active(event)" href="#locations">Locations</a>
                         </li>
                         <li>
-                            <a href="/">Home</a>
+                            <a onclick="active(event)" href="#about">About</a>
                         </li>
                     </ul>
                 </nav>
@@ -44,7 +44,7 @@
     </header>
 
     <section id="banner">
-        <div class="container column">
+        <div id="home" class="container column">
             <div class="banner_headline">
                 <h1>Top road experience</h1>
                 <h2>The Road is Yours</h2>
@@ -88,7 +88,7 @@
 
     <section id="content">
         <div class="container">
-            <section>
+            <section id="news">
                 <div class="widget">
                     <div class="widget_title">
                         <div class="widget_title_text">Road News</div>
@@ -211,7 +211,7 @@
                 </div>
                 <div class="widget">
                     <div class="widget_title">
-                        <div class="widget_title_text">Our Places</div>
+                        <div id="locations" class="widget_title_text">Our Places</div>
                         <div class="widget_title_bar"></div>
                     </div>
                     <div class="widget_body">
@@ -257,7 +257,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="about">
         <div class="container flexColumn">
             <div class="footer_menu">
                 <a href="">
@@ -437,6 +437,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
