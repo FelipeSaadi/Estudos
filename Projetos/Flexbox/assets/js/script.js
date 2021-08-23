@@ -1,16 +1,13 @@
 window.onload = function () {
     document.querySelector(".menuMobile").addEventListener("click", function () {
-        document.querySelector("nav .active").classList.remove("active")
         if (document.querySelector(".menu nav ul").style.display == "flex") {
             document.querySelector(".menu nav ul").style.display = "none"
         } else {
             document.querySelector(".menu nav ul").style.display = "flex"
         }
     })
-
-
 }
-let active = elem => {
+let active = ev => {
     document.querySelector(".active").classList.remove("active")
-    elem.target.classList.add("active")
+    ev.target.classList.add("active")
 }
