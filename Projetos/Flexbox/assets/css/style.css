@@ -10,7 +10,7 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    width: 990px;
+    width: 80%;
 }
 
 header {
@@ -47,6 +47,20 @@ nav .active a, nav a:hover {
     background-color: #626262;
     color: #eeee;
 }
+.menuMobile {
+    display: none;
+}
+.menuMobile:hover {
+    cursor: pointer;
+}
+.mm_line {
+    background-color: #dddd;
+    height: 2px;
+    width: 35px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
 .column {
     flex-direction: column;
 }
@@ -169,6 +183,7 @@ nav .active a, nav a:hover {
 article {
     flex: 1;
     min-width: 300px;
+    max-width: 400px;
     margin-right: 20px;
 }
 article a {
@@ -213,12 +228,11 @@ article .news_resume {
 }
 .photos {
     flex: 40%;
-    margin-right: 5%;
+    margin-right: 10px;
     margin-bottom: 10px;
 }
 .photos img {
-    min-width: 125px;
-    max-width: 100%;
+    width: 150px;
     max-height: 84px;
 }
 .places_desc {
@@ -354,4 +368,56 @@ footer {
     line-height: 40px;
     color: #808080;
     margin-top: 30px;
+}   
+
+@media (max-width: 768px) {
+    #banner {
+        height: auto;
+        padding-top: 20px;
+    }
+    .banner_headline h1 {
+        font-size: 55px;
+    }
+    .banner_headline h2, .banner_title {
+        font-size: 18px;
+    }
+    .banner_options {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .footer_menu_title {
+        font-size: 18px;
+    }
+    .widget_title_text {
+        font-size: 18px;
+    }
+    .footer_desc, .footer_info_title, .footer_info_text, .footer_info_contact, .latest_posts_icon, .latest_posts_text, .latest_posts_postedAt, .latest_tweets_icon, .latest_tweets_text, .latest_tweets_postedAt, .footer_copy {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        flex-direction: column;
+    }
+    header {
+        height: auto;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    .menuMobile {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+    .footer_menu {
+        flex-direction: column;
+    }
+    .footer_area {
+        flex-direction: column;
+    }
 }
