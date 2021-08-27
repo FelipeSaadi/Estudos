@@ -1,5 +1,11 @@
 #footer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
     background-color: #222;
     color: #ddd;
     height: 20vh;
+}
+.container {
+    width: 90%;
 }

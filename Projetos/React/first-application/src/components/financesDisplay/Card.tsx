@@ -3,40 +3,50 @@ import outIcon from "../../images/arrow-down.svg"
 import totalIcon from "../../images/dollar-sign.svg"
 
 import styles from "../../css/financesDisplay.module.css"
+import { ProgressPlugin } from "webpack"
 export default (props: any) => {
     return (
         <>
-            {cardType(props.type)}
+            {cardType(props.type, props.value)}
         </>
     )
 }
 
-let cardType = (type: String) => {
+let cardType = (type: String, value: Number) => {
     if (type === "in") {
         return (
             <div className={styles.card}>
-                <div className={styles.title}>In</div>
-                <div className={styles.icon}>
-                    <img src={inIcon} alt="" />
+                <div className={styles.title}>
+                    <div className={styles.titleName}>In</div>
+                    <div className={styles.titleIcon}>
+                        <img src={inIcon} alt="" />
+                    </div>
                 </div>
+                <div className={styles.value}>$ {value}</div>
             </div>
         )
     } else if (type === "out") {
         return (
             <div className={styles.card}>
-                <div className={styles.title}>Out</div>
-                <div className={styles.icon}>
-                    <img src={outIcon} alt="" />
+                <div className={styles.title}>
+                    <div className={styles.titleName}>Out</div>
+                    <div className={styles.titleIcon}>
+                        <img src={outIcon} alt="" />
+                    </div>
                 </div>
+                <div className={styles.value}>$ {value}</div>
             </div>
         )
     } else if (type === "total") {
         return (
             <div className={styles.card}>
-                <div className={styles.title}>Total</div>
-                <div className={styles.icon}>
-                    <img src={totalIcon} alt="" />
+                <div className={styles.title}>
+                    <div className={styles.titleName}>Total</div>
+                    <div className={styles.titleIcon}>
+                        <img src={totalIcon} alt="" />
+                    </div>
                 </div>
+                <div className={styles.value}>$ {value}</div>
             </div>
         )
     }
