@@ -1,18 +1,23 @@
 #header {
     background: rgb(17, 1, 90);
     width: 100vw;
-    height: 20vh;
+    height: 250px;
     display: flex;
-    align-items: center;
-
+    justify-content: space-between;
 }
 .logo {
-    display: flex;
-    margin-left: 0;
+    line-height: 40px;
+    margin: 40px;
     color: #ddd;
+
 }
 .addNewButton {
-    display: flex;
+    font-size: 16px;
+    margin: 40px;
+    width: 180px;
+    height: 40px;
     color: #ddd;
-    background-color: rgb(19, 9, 63);
+    border-width: 1px;
+    border-color: #400080;
+    background-color: #400080;
 }
