@@ -11,12 +11,12 @@
 
 .card {
     display: flex;
-    flex: 1;
+    flex:1;
     flex-direction: column;
-    margin-top: -110px;
+    margin-top: -80px;
     margin-left: 15px;
     margin-right: 15px;
-    height: 140px;
+    height: 120px;
     border-radius: 5px;
     background-color: white;
 }
@@ -26,20 +26,22 @@
 .titleName {
     flex: 1;
     font-size: 20px;
-    color: black;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 40px;
-    width: 100%;
 }
-.titleIcon img{
-    width: 30px;
+.titleIcon{
+    width: 25px;
     filter: contrast(175%) brightness(3%);
-    padding-right: 40px;
-    padding-top: 30px;
+    margin-right: 40px;
+    margin-top: 20px;
 }
 .value {
     width: 100%;
     padding-top: 10px;
     padding-left: 40px;
-    font-size: 35px;
+    font-size: 30px;
+}
+#total {
+    background-color: darkorange;
+    color: white;
 }

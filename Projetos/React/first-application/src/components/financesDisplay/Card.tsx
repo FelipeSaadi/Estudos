@@ -3,7 +3,6 @@ import outIcon from "../../images/arrow-down.svg"
 import totalIcon from "../../images/dollar-sign.svg"
 
 import styles from "../../css/financesDisplay.module.css"
-import { ProgressPlugin } from "webpack"
 export default (props: any) => {
     return (
         <>
@@ -39,7 +38,7 @@ let cardType = (type: String, value: Number) => {
         )
     } else if (type === "total") {
         return (
-            <div className={styles.card}>
+            <div className={styles.card} id={styles.total}>
                 <div className={styles.title}>
                     <div className={styles.titleName}>Total</div>
                     <div className={styles.titleIcon}>

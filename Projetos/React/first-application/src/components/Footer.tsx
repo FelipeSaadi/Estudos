@@ -1,8 +1,10 @@
-import styles from "../css/home.module.css"
+import styles from "../css/footer.module.css"
 export default () => {
     return (
         <div id={styles.footer}>
-            <span>Created By Felipe Saadi</span>
+            <div className={styles.container}>
+                <div>Created By Felipe Saadi</div>
+            </div>
         </div>
     )
 }
