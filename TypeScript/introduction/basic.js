@@ -1,2 +1,3 @@
-var a = "Test TS!";
+"use strict";
+var a = "Test TS! (web)";
 console.log(a);
