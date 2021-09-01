@@ -5,7 +5,8 @@ import styles from "../css/home.module.css"
 import TableHeader from "./table/TableHeader"
 import TableRow from "./table/TableRow"
 export default () => {
-
+    // Table
+    const [table, setTable] = useState([])
 
     // ModaL
     const [isModalVisible, setIsModalVisible] = useState(false)
@@ -16,6 +17,9 @@ export default () => {
     }
 
     const handleOk = () => {
+        /*setTable((table) => {
+            [...table, "teste"]
+        })*/
         setIsModalVisible(false);
     }
 

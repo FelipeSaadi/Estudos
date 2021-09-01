@@ -80,7 +80,18 @@
 .modalLabel {
     width: 100%;
 }
+.modalCheck {
+    width: 50%;
+}
 .modalInput {
     width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-width: 1px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.modalInput:active, .modalInput:focus {
+    outline: none;
 }
