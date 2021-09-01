@@ -4,9 +4,9 @@ export default () => {
     return (
         <div className={styles.display}>
             <div className={styles.container}>
-                <Card type="in" value="2.000.00" />
-                <Card type="out" value="800.00" />
-                <Card type="total" value="1.200.00" />
+                <Card type="in" value={2000} />
+                <Card type="out" value={800.0} />
+                <Card type="total" value={1200} />
             </div>
         </div>
     )

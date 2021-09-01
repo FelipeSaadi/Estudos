@@ -1,31 +1,35 @@
 #home {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
     background-color: #F0F2F5;
     color: #222;
 }
 .container {
-    display: flex;
     flex-direction: column;
-    margin-top: 80px;
     width: 90%;
-    min-height: 600px;
+}
+.table {
+    width: 91vw;
+    max-height: 250px;
+    overflow-y: scroll;
 }
 .tableHeader {
     display: flex;
-    width: 100%;
+    align-items: center;
     height: 60px;
 }
 .headingText {
     flex: 1;
     font-size: 18px;
+    line-height: 18px;
     color: #A9B2CA;
-    padding-top: 20px;
     padding-left: 40px;
 }
 .tableRow {
     display: flex;
+    align-items: center;
     width: 100%;
     height: 60px;
     margin-bottom: 8px;
@@ -36,14 +40,12 @@
     flex: 1;
     font-size: 18px;
     color: black;
-    padding-top: 20px;
     padding-left: 40px;
 }
 .entry {
     flex: 1;
     font-size: 18px;
     color: green;
-    padding-top: 20px;
     padding-left: 40px;
 }
 .out {
@@ -52,7 +54,33 @@
     line-height: 18px;
     vertical-align: center;
     color: red;
-    padding-top: 20px;
     height: 20px;
     padding-left: 40px;
+}
+.displayButton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.addNewButton {
+    align-self: flex-end;
+    font-size: 16px;
+    margin-top: 60px;
+    width: 180px;
+    height: 40px;
+    color: black;
+    border-width: 1px;
+    border-color: #fbfbfb;
+    background-color: #fbfbfb ;
+}
+.addNewButton:hover {
+    cursor: pointer;
+}
+
+.modalLabel {
+    width: 100%;
+}
+.modalInput {
+    width: 100%;
+    border-width: 1px;
 }

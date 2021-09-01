@@ -11,12 +11,10 @@
 
 .card {
     display: flex;
-    flex:1;
+    width: 32%;
     flex-direction: column;
     margin-top: -80px;
-    margin-left: 15px;
-    margin-right: 15px;
-    height: 120px;
+    height: 110px;
     border-radius: 5px;
     background-color: white;
 }
@@ -26,14 +24,14 @@
 .titleName {
     flex: 1;
     font-size: 20px;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-left: 40px;
 }
 .titleIcon{
     width: 25px;
     filter: contrast(175%) brightness(3%);
     margin-right: 40px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .value {
     width: 100%;
