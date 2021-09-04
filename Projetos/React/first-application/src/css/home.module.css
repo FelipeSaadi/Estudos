@@ -90,8 +90,27 @@
     border-right: none;
     border-width: 1px;
     margin-top: 5px;
+    height: 25px;
     margin-bottom: 10px;
 }
 .modalInput:active, .modalInput:focus {
     outline: none;
+}
+.entryTitle {
+    width: 50%;
+}
+.checkboxDiv {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.labelCheckbox {
+    margin-left: 5%;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.modalCheckbox {
+    width: 20px;
+    height: 20px;
 }

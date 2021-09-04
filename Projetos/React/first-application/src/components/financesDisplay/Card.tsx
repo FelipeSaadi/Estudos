@@ -13,6 +13,9 @@ export default (props: any) => {
 
 let cardType = (type: String, value: number) => {
     const adjustValue = (value: number) => {
+        if (type === "total") {
+            console.log(`Total ${value}`)
+        }
         return new Intl.NumberFormat('en-US', {
             style: 'currency',
             currency: 'USD',
@@ -27,7 +30,9 @@ let cardType = (type: String, value: number) => {
                         <img src={inIcon} alt="" />
                     </div>
                 </div>
-                <div className={styles.value}>{adjustValue(value)}</div>
+                <div className={styles.value}>
+                    {adjustValue(value)}
+                </div>
             </div>
         )
     } else if (type === "out") {
@@ -39,19 +44,26 @@ let cardType = (type: String, value: number) => {
                         <img src={outIcon} alt="" />
                     </div>
                 </div>
-                <div className={styles.value}>{adjustValue(value)}</div>
+                <div className={styles.value}>
+                    {adjustValue(value)}
+                </div>
             </div>
         )
     } else if (type === "total") {
         return (
             <div className={styles.card} id={styles.total}>
                 <div className={styles.title}>
-                    <div className={styles.titleName}>Total</div>
+                    <div className={styles.titleName}>
+                        Total
+                    </div>
                     <div className={styles.titleIcon}>
                         <img src={totalIcon} alt="" />
                     </div>
                 </div>
-                <div className={styles.value}>{adjustValue(value)}</div>
+                <div className={styles.value}>
+                    {value < 0 ? "- " : null}
+                    {adjustValue(value)}
+                </div>
             </div>
         )
     }
