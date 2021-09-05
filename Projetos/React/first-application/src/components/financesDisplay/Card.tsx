@@ -1,6 +1,6 @@
-import inIcon from "../../images/arrow-up.svg"
-import outIcon from "../../images/arrow-down.svg"
-import totalIcon from "../../images/dollar-sign.svg"
+import inIcon from "../../images/green-arrow.png"
+import outIcon from "../../images/red-arrow.png"
+import totalIcon from "../../images/dollar-sign.png"
 
 import styles from "../../css/financesDisplay.module.css"
 export default (props: any) => {

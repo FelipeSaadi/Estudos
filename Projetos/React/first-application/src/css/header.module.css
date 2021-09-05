@@ -29,3 +29,15 @@
 .addNewButton:hover {
     cursor: pointer;
 }
+/* 
+@media (max-width: px) {
+    #header {
+        height: 300px;
+    }
+} */
+
+@media (max-width: 600px) {
+    #header {
+        height: 300px;
+    }
+}
