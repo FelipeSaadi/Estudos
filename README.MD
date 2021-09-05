@@ -12,4 +12,4 @@
 
 ## Next.js
 
-## REACT NATIVE
+## React Native
