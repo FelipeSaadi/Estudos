@@ -1,14 +1,16 @@
-import { Modal } from "antd"
+import { Input, Modal } from "antd"
 import { useEffect, useState } from 'react';
 import 'antd/dist/antd.css'
 import FinancesDisplay from "./financesDisplay/Display"
 import styles from "../css/home.module.css"
 import TableHeader from "./table/TableHeader"
 import TableRow from "./table/TableRow"
+
 export default () => {
     const updateDisplay = () => {
         return <FinancesDisplay entry={entry} out={out} total={total} />
     }
+
     const create = (teste: any,) => {
         return [...teste, (
             <TableRow title={title} price={entryType == "in" ? value : -value} category={category} date={date} />)]
@@ -19,6 +21,7 @@ export default () => {
         setValue('')
         setCategory('')
         setDate('')
+        setErrorMessage('')
     }
     // Display
     const [entry, setEntry] = useState<number>(0)
@@ -39,6 +42,14 @@ export default () => {
     const [value, setValue] = useState<any>()
     const [category, setCategory] = useState<any>()
     const [date, setDate] = useState<any>()
+    const [errorMessage, setErrorMessage] = useState<any>()
+
+    useEffect(() => {
+        if (title && entryType && value && category && date !== '') {
+            console.log(entryType)
+            setErrorMessage('')
+        }
+    }, [title, entryType, value, category, date])
 
     // Table
     const [table, setTable] = useState<Array<any>>([])
@@ -62,6 +73,28 @@ export default () => {
             }
             setTable(create(table))
             setIsModalVisible(false);
+        } else {
+            const inputs = document.querySelectorAll("input")
+            for (let i = 0; i < inputs.length; i++) {
+                if (inputs[i].value == "") {
+                    return setErrorMessage(
+                        <label
+                            id="fail-message"
+                            style={
+                                {
+                                    color: "rgb(225, 0, 0)",
+                                    fontSize: "14px",
+                                    display: "block",
+                                    width: "100%",
+                                    marginTop: "5px"
+                                }
+                            }
+                            htmlFor="fail-message">
+                            Please fill all fields!
+                        </label>
+                    )
+                }
+            }
         }
     }
 
@@ -111,6 +144,36 @@ export default () => {
                                     htmlFor="type">
                                     Entry type
                                 </label>
+
+                                {/* <div className={styles.radioDiv}>
+                                    <label
+                                        className={styles.labelRadio}
+                                        htmlFor="radio-in">
+                                        In
+                                    </label>
+                                    <input
+                                        value={entryType}
+                                        className={styles.inputRadio}
+                                        type="radio"
+                                        id="radio-in"
+                                        name="type"
+                                        onClick={() => setEntryType("in")}
+                                    />
+                                    <label
+                                        className={styles.labelRadio}
+                                        htmlFor="radio-out">
+                                        Out
+                                    </label>
+                                    <input
+                                        className={styles.inputRadio}
+                                        value={entryType}
+                                        type="radio"
+                                        id="radio-out"
+                                        name="type"
+                                        onClick={() => setEntryType("out")}
+                                    />
+                                </div> */}
+
                                 <select
                                     value={entryType}
                                     className={styles.modalInput}
@@ -193,6 +256,8 @@ export default () => {
                                     id="date"
                                     className={styles.modalInput}
                                     type="date" />
+
+                                {errorMessage}
                             </form>
                         </Modal>
                     </div>

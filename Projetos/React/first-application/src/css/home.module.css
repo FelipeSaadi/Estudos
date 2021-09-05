@@ -12,7 +12,7 @@
 }
 .table {
     width: 91vw;
-    max-height: 250px;
+    max-height: 300px;
     overflow-y: scroll;
 }
 .tableHeader {
@@ -99,18 +99,25 @@
 .entryTitle {
     width: 50%;
 }
-.checkboxDiv {
-    width: 50%;
+/* .radioDiv {
     display: flex;
-    justify-content: center;
+    width: 100%;
+    margin-top:15px;
+    justify-content: flex-start;
     align-items: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #7D7D7D;
+    border-width: 1px;
+    margin-bottom: 10px;
 }
-.labelCheckbox {
-    margin-left: 5%;
+.labelRadio {
     margin-right: 10px;
-    font-size: 16px;
+    font-size: 14px;
 }
-.modalCheckbox {
-    width: 20px;
-    height: 20px;
-}
+.inputRadio {
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+} */

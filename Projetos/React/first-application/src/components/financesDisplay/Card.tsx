@@ -13,9 +13,6 @@ export default (props: any) => {
 
 let cardType = (type: String, value: number) => {
     const adjustValue = (value: number) => {
-        if (type === "total") {
-            console.log(`Total ${value}`)
-        }
         return new Intl.NumberFormat('en-US', {
             style: 'currency',
             currency: 'USD',
