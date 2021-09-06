@@ -1,4 +1,4 @@
-import { Input, Modal } from "antd"
+import { Modal } from "antd"
 import { useEffect, useState } from 'react';
 import 'antd/dist/antd.css'
 import FinancesDisplay from "./financesDisplay/Display"
@@ -11,8 +11,8 @@ export default () => {
         return <FinancesDisplay entry={entry} out={out} total={total} />
     }
 
-    const create = (teste: any,) => {
-        return [...teste, (
+    const create = (rowList: any,) => {
+        return [...rowList, (
             <TableRow title={title} price={entryType == "in" ? value : -value} category={category} date={date} />)]
     }
     const clearInputs = () => {
