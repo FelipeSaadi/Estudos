@@ -2,12 +2,12 @@ import { useRouter } from "next/router";
 
 export default function idAndName() {
   const router = useRouter()
-  const id = router.query.id
+  const code = router.query.code
   const name = router.query.name
 
   return (
     <div>
-      <h1>Route / {id} / {name}</h1>
+      <h1>Route / {code} / {name}</h1>
     </div>
   )
 }
