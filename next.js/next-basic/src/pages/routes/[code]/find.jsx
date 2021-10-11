@@ -1,12 +1,16 @@
-import { useRouter } from "next/router"
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 export default function find() {
   const router = useRouter()
-  const id = router.query.id
+  const code = router.query.code
 
   return (
     <div>
-      <h1>routes / {id} / find</h1>
+      <h1>routes / {code} / find</h1>
+      <Link href="/routes">
+        <button>Voltar</button>
+      </Link>
     </div>
   )
 }

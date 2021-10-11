@@ -1,4 +1,5 @@
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 export default function idAndName() {
   const router = useRouter()
@@ -8,6 +9,9 @@ export default function idAndName() {
   return (
     <div>
       <h1>Route / {code} / {name}</h1>
+      <Link href="/routes">
+        <button>Voltar</button>
+      </Link>
     </div>
   )
 }
