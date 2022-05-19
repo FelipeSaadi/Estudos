@@ -1,0 +1,1 @@
+module.exports = "Dados enviados de outro arquvivo."
