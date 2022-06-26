@@ -1,7 +1,11 @@
-const Header = () => {
+type Props = {
+    title?: string;
+}
+
+const Header = ({title}: Props) => {
     return (
         <header>
-            <h1>Título da Página</h1>
+            <h1>{title}</h1>
             <hr></hr>
         </header>
     )

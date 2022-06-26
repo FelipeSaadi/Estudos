@@ -4,7 +4,7 @@ import Calc from './components/Calc'
 const App = () => {
   return (
     <div>
-      <Header/>
+      <Header title = "Título da Página"/>
       <Calc/>
     </div>
   )
