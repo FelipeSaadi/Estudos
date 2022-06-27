@@ -2,14 +2,25 @@ import React, { useState } from 'react';
 
 const App = () => {
   let [show, setShow] = useState(false);
+  let [clicked, setClicked] = useState(false);
+  let [padding, setPadding] = useState(0);
 
   const handleClick = () => {
     setShow(!show);
+    setClicked(!clicked);
+    setPadding(padding + 1)
   }
 
-  let buttonStyle = {
+  let buttonStyle;
+
+  clicked ? buttonStyle = {
+    backgroundColor: "grey",
+    color: "white",
+    padding
+  } : buttonStyle = {
     backgroundColor: "red",
-    color: "white"
+    color: "white",
+    padding
   }
 
   return (
@@ -17,12 +28,12 @@ const App = () => {
       {show ? (
         <>
           <p>Meu nome é Felipe Saadi.</p>
-          <button style={ buttonStyle } onClick={handleClick}>Não mostrar</button>
+          <button style={buttonStyle} onClick={handleClick}>Não mostrar</button>
         </>
       ) : (
         <>
           <p>Nada a mostrar.</p>
-          <button style={ buttonStyle } onClick={handleClick}>Mostrar</button>
+          <button style={buttonStyle} onClick={handleClick}>Mostrar</button>
         </>
       )}
     </div>
