@@ -7,17 +7,22 @@ const App = () => {
     setShow(!show);
   }
 
+  let buttonStyle = {
+    backgroundColor: "red",
+    color: "white"
+  }
+
   return (
     <div>
       {show ? (
         <>
           <p>Meu nome é Felipe Saadi.</p>
-          <button onClick={handleClick}>Não mostrar</button>
+          <button style={ buttonStyle } onClick={handleClick}>Não mostrar</button>
         </>
       ) : (
         <>
           <p>Nada a mostrar.</p>
-          <button onClick={handleClick}>Mostrar</button>
+          <button style={ buttonStyle } onClick={handleClick}>Mostrar</button>
         </>
       )}
     </div>
