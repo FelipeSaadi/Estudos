@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 
 const App = () => {
   const [name, setName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [age, setAge] = useState('');
   // const [number, setNumber] = useState(0);
 
   // const add = () => {
@@ -17,8 +19,14 @@ const App = () => {
   //   }
   // }
 
-  const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputName = (event: React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value)
+  }
+  const handleInputLastName = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setLastName(event.target.value)
+  }
+  const handleInputAge = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setAge(event.target.value)
   }
 
   return (
@@ -34,10 +42,29 @@ const App = () => {
       <div>Valor: {number}</div>
       <button onClick={add}>Adicionar</button> */}
 
-      Nome:
-      <input type="text" value={name} onChange={handleInput}/>
+      <div>
+        Nome:
+        <input type="text" value={name} onChange={handleInputName} />
+      </div>
+
+      <div>
+        Sobrenome:
+        <input type="text" value={lastName} onChange={handleInputLastName} />
+      </div>
+
+      <div>
+        Idade:
+        <input type="number" value={age} onChange={handleInputAge} />
+      </div>
+
       <hr />
-      Seu nome é: {name}
+
+      <div>
+        Olá {`${name} ${lastName}`}, tudo bem?
+      </div>
+      <div>
+        Você tem {age} anos.
+      </div>
     </div>
   )
 }
