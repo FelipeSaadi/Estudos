@@ -1,16 +1,25 @@
 import React, { useState } from 'react';
-import Button from './components/Button';
 
 const App = () => {
-  let [textButton, setTextButton] = useState('Clique aqui');
+  let [show, setShow] = useState(false);
 
-  const handleClick = (txt: string) => {
-    alert(txt);
-}
+  const handleClick = () => {
+    setShow(!show);
+  }
 
   return (
     <div>
-        <Button text={textButton} clickFn={handleClick}/>
+      {show ? (
+        <>
+          <p>Meu nome é Felipe Saadi.</p>
+          <button onClick={handleClick}>Não mostrar</button>
+        </>
+      ) : (
+        <>
+          <p>Nada a mostrar.</p>
+          <button onClick={handleClick}>Mostrar</button>
+        </>
+      )}
     </div>
   )
 }
