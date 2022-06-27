@@ -4,11 +4,21 @@ import Photo from './components/Photo'
 import { useState } from 'react';
 
 const App = () => {
-  // const [number, setNumber] = useState(0);
-  const [name, setName] = useState('Felipe');
+  const [number, setNumber] = useState(0);
+  // const [name, setName] = useState('Felipe');
 
-  const handleButtonClick = () => {
-    setName('Saadi');
+  // const handleButtonClick = () => {
+  //   setName('Saadi');
+  // }
+
+  const add = () => {
+    setNumber(number + 1)
+  }
+
+  const remove = () => {
+    if(number >= 1) {
+      setNumber(number - 1)
+    }
   }
 
   return (
@@ -19,8 +29,9 @@ const App = () => {
       <Photo legend="Google">
         <img src="https://www.google.com.br/google.jpg" alt="" />
       </Photo>
-      Me chamo {name}.
-      <button onClick={handleButtonClick}>Clique aqui</button>
+      <button onClick={remove}>Remover</button>
+      <div>Valor: {number}</div>
+      <button onClick={add}>Adicionar</button>
     </div>
   )
 }
