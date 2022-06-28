@@ -5,14 +5,18 @@ type ContainerProps = {
 }
 
 export const Container = styled.div<ContainerProps>`
+    max-width: 600px;
+    margin: auto;
     background-color: ${props => props.bg};
     color: white;
     font-weight: 600;
     padding: 20px;
+    display: flex;
 
     span {
         font-weight: bold;
         color: red;
+        width
     }
     
     .link {
@@ -20,6 +24,15 @@ export const Container = styled.div<ContainerProps>`
 
         &:hover {
             color: #2b2b2b;
+        }
+    }
+
+    @media (max-width: 500px) {
+        background-color: green;
+        flex-direction: column;
+
+        span {
+            color: blue;
         }
     }
 `;
