@@ -9,6 +9,19 @@ export const Container = styled.div<ContainerProps>`
     color: white;
     font-weight: 600;
     padding: 20px;
+
+    span {
+        font-weight: bold;
+        color: red;
+    }
+    
+    .link {
+        color: #d5d5d5;
+
+        &:hover {
+            color: #2b2b2b;
+        }
+    }
 `;
 
 type ButtonProps = {
