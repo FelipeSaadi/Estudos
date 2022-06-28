@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import Button from './components/Button';
+// import { Container, Button } from "./AppStyles"
+
+import * as C from './AppStyles'
 
 const App = () => {
   return (
-    <div>
-      <Button />
-    </div>
+      <C.Container>
+        Texto do componente
+        <C.Button>Clique aqui</C.Button>
+      </C.Container>
   )
 }
 
