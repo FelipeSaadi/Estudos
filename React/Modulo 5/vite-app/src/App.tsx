@@ -2,26 +2,20 @@ import { ChangeEvent, useEffect, useState } from 'react'
 import './App.css'
 
 const App = () => {
-  const [name, setName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [fullName, setFullName] = useState('');
+  const [movies, setMovies] = useState([]);
 
-  useEffect(() => {
-    setFullName(`${name} ${lastName}`)
-  }, [name, lastName])
-
-  const handleNameChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setName(e.target.value)
-  }
-  const handleLastNameChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setLastName(e.target.value)
+  const loadMovies = () => {
+    fetch("https://api.b7web.com.br/cinema/").then((response) => {
+        return response.json();
+      }).then((json) => {
+        setMovies(json);
+      })
   }
 
   return (
     <div>
-      <input type="text" value={name} placeholder="Digite seu nome" onChange={handleNameChange} />
-      <input type="text" value={lastName} placeholder="Digite seu Sobrenome" onChange={handleLastNameChange} />
-      <p>Nome Completo: {fullName}</p>
+      <button onClick={loadMovies}>Carregar Filmes</button>
+      Total de Filmes: {movies.length}
     </div>
   )
 }
