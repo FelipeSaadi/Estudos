@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
+import { useState } from 'react';
 import styles from './App.module.css'
 import poweredImage from './assets/powered.png';
 import { levels, calculateImc } from './helpers/imc';
