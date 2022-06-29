@@ -1,21 +1,27 @@
-import { useEffect, useState } from 'react'
+import { ChangeEvent, useEffect, useState } from 'react'
 import './App.css'
 
 const App = () => {
-  const [name, setName] = useState('Saadi');
+  const [name, setName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [fullName, setFullName] = useState('');
 
   useEffect(() => {
-    alert("Executou");
-  }, [name]);
+    setFullName(`${name} ${lastName}`)
+  }, [name, lastName])
 
-  const handleClick = () => {
-    setName('Rafael');
+  const handleNameChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setName(e.target.value)
+  }
+  const handleLastNameChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setLastName(e.target.value)
   }
 
   return (
     <div>
-      Nome: {name}
-      <button onClick={handleClick}>Clique Aqui</button>
+      <input type="text" value={name} placeholder="Digite seu nome" onChange={handleNameChange} />
+      <input type="text" value={lastName} placeholder="Digite seu Sobrenome" onChange={handleLastNameChange} />
+      <p>Nome Completo: {fullName}</p>
     </div>
   )
 }
