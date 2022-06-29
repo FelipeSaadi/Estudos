@@ -92,3 +92,48 @@ body {
 .container .rightSide .rightArrow:hover {
     opacity: .85;
 }
+
+@media (max-width: 770px) {
+    header {
+        padding: 0 20px;
+    }
+    .container {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .container .leftSide {
+        margin-right: 0;
+    }
+    .container .rightSide {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .container .rightSide .rightArrow  {
+        margin-left: 0;
+        margin-top: 0;
+        align-self: flex-start;
+        margin: 10px;
+        transform: rotate(45deg) 
+    }
+    .container .rightSide .rightResult {
+        margin: 0 20%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 430px) {
+    .container .rightSide .grid {
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+    .container .rightSide .rightResult {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .container .rightSide .rightArrow {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+}
