@@ -1,61 +1,43 @@
 import { ChangeEvent, useEffect, useState } from 'react'
 import './App.css'
-import { Movie } from './types/Movies';
+import { Post } from './types/Posts';
 
 const App = () => {
-  const [movies, setMovies] = useState<Movie[]>([]);
+  const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    loadMovies();
+    loadPosts()
   }, [])
 
-  // const loadMovies = () => {
-  //   fetch("https://api.b7web.com.br/cinema/")
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then((json) => {
-  //       setMovies(json);
-  //       setLoading(false)
-  //     })
-  //     .catch(err => {
-  //       setLoading(false);
-  //     })
-  // }
-
-  const loadMovies = async () => {
-    try {
-      setLoading(true);
-      let response = await fetch("https://api.b7web.com.br/cinema/");
-      let json = await response.json();
-      setLoading(false);
-      setMovies(json);
-    } catch (err) {
-      setLoading(false);
-    }
+  const loadPosts = async () => {
+    let response = await fetch("https://jsonplaceholder.typicode.com/posts");
+    let json = await response.json();
+    setPosts(json);
+    setLoading(false);
   }
 
   return (
-    <div>
+    <div className='p-5'>
       {loading &&
         <div>Carregando...</div>
       }
-      {!loading && movies.length > 0 &&
+      {!loading && posts.length > 0 &&
         <>
-          Total de Filmes: {movies.length}
-          <div className="grid grid-cols-6 gap-3">
-            {movies.map((movie, index) => (
-              <div key={index}>
-                <img src={movie.avatar} alt="" width={150} />
-                {movie.titulo}
+          Total de Posts: {posts.length}
+          <div>
+            {posts.map((post, index) => (
+              <div key={index} className="my-4">
+                <h4 className='font-bold'>{post.title}</h4>
+                <small>#{post.id} - Usuário: {post.userId}</small>
+                <p>{post.body}</p>
               </div>
             ))}
           </div>
         </>
       }
-      {!loading && movies.length === 0 &&
-        <div>Tente novamente mais tarde.</div>
+      {!loading && posts.length === 0 &&
+        <div>Não há posts para exibir.</div>
       }
     </div>
   )
