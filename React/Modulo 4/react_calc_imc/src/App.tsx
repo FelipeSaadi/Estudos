@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import styles from './App.module.css'
 import poweredImage from './assets/powered.png';
+import { levels, calculateImc } from './helpers/imc';
 
 function App() {
   const [heightField, setHeightField] = useState<number>(0);
@@ -9,7 +10,7 @@ function App() {
 
   const handleCalculateButton = () => {
     if(heightField && weightField) {
-
+      console.log(calculateImc(heightField, weightField))
     } else {
       alert("Digite todos os campos.")
     }
