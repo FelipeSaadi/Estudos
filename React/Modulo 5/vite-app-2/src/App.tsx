@@ -7,7 +7,7 @@ type reducerAction = {
   type: string;
 }
 
-const initialState = { count: 0 };
+const initialState = { count: 15 };
 
 const reducer = (state: reducerState, action: reducerAction) => {
   switch (action.type) {
@@ -15,11 +15,13 @@ const reducer = (state: reducerState, action: reducerAction) => {
       return { ...state, count: state.count + 1 };
       break;
     case 'DEL':
-      return { ...state, count: state.count - 1 };
-    break;
-    case 'RESET': 
+      if (state.count > 0) {
+        return { ...state, count: state.count - 1 };
+      }
+      break;
+    case 'RESET':
       return initialState;
-    break;
+      break;
   }
   return state
 }
@@ -28,7 +30,13 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div className='p-5'></div>
+    <div className='p-5'>
+      Contagem: {state.count}
+      <hr />
+      <button className='bg-green-500 m-2 p-2 rounded' onClick={() => dispatch({ type: "ADD" })}>Adicionar</button>
+      <button className='bg-red-500 m-2 p-2 rounded' onClick={() => dispatch({ type: "DEL" })}>Remover</button>
+      <button className='bg-yellow-500 m-2 p-2 rounded' onClick={() => dispatch({ type: "RESET" })}>Resetar</button>
+    </div>
   )
 }
 
