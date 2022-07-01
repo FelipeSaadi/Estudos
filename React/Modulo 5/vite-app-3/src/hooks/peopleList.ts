@@ -24,17 +24,21 @@ const reducer = (state: Person[], action: ActionType) => {
                 newState.push({
                     id: uuid(),
                     name: action.payload?.name
-                })
+                });
                 return newState
             }
             break;
         case 'DEL':
             if (action.payload?.id) {
-                state = state.filter(item => item.id != action.payload?.id);
+                let newState = [...state];
+                newState = newState.filter(item => item.id != action.payload?.id);
+                return newState;
             }
             break;
         case 'ORDER':
-            state = state.sort((a, b) => a.name > b.name ? 1 : -1); break;
+            let newState = [...state];
+            newState = newState.sort((a, b) => a.name > b.name ? 1 : -1);
+            return newState;
     }
     return state
 }
