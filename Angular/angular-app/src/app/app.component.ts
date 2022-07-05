@@ -7,6 +7,28 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My Application';
-  names = ['Felipe Saadi', 'Ricardo Peixoto', 'Fernando Cardoso', 'Thaís Mello', 'Patrícia Kanvar'];
+  names = [
+    {
+      name: 'Felipe Saadi',
+      age: 23
+    },
+    {
+      name: 'Rafael Cardoso',
+      age: 32
+    },
+    {
+      name: 'Beatriz Viana',
+      age: 27
+    },
+    {
+      name: 'Fernando Paiva',
+      age: 18
+    },
+    {
+      name: 'Patrícia Haron',
+      age: 25
+    }
+  ]
   mainName = this.names[0];
+
 }
