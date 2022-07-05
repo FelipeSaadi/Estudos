@@ -19,5 +19,6 @@ export class AppComponent {
   ]
 
   mainName = this.names[0];
-
+  showAlert = true;
+  alertMessage = "Este é um aviso."
 }
